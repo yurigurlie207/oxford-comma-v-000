@@ -8,7 +8,7 @@ def oxford_comma(array)
     list = "#{first} and #{last}"
   else
     last = array.pop
-    list = array.join(", ") + ",and #{last}"
+    list = array.join(", ") + ", and #{last}"
   end
 
   return list
