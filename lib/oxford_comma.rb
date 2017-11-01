@@ -1,15 +1,14 @@
 def oxford_comma(array)
 
   if array.size == 1 then
-    list = array.pop
+    array.pop
   elsif array.size == 2 then
     last = array.last
     first = array.first
-    list = "#{first} and #{last}"
+    "#{first} and #{last}"
   else
     last = array.pop
-    list = array.join(", ") + ", and #{last}"
+    array.join(", ") + ", and #{last}"
   end
 
-  return list
 end
